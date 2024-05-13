@@ -59,6 +59,7 @@ const Game = () => {
                                             className="form-control mb-2 w-100 custom-textarea"
                                             placeholder="Entrez une phrase en français"
                                             style={{ filter: translatedValue ? 'blur(5px)' : 'none' }}
+                                            
                                             />
                                     </Col>
                                 </Row>

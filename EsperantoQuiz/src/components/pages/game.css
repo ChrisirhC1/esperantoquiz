@@ -7,3 +7,7 @@
     /* height: 100vh; Hauteur maximale de la fenêtre visible */
     overflow: hidden; /* Désactiver le défilement */
 }
+
+.form-control {
+    font-size: 1.3rem;
+}
