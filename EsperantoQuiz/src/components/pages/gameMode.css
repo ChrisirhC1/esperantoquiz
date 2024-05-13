@@ -1,0 +1,20 @@
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 5vw; /* Utilisation d'une unité de vue pour un espacement relatif */
+}
+
+.btn-square {
+    width: 40vw; /* Utilisation d'une unité de vue pour une largeur relative */
+    height: 40vw; /* Hauteur égale à la largeur pour obtenir un bouton carré */
+    border-radius: 20px; /* Assurez-vous que le bouton a un bord arrondi */
+    font-size: 4vw; /* Utilisation d'une unité de vue pour une taille de police relative */
+    text-align: center; /* Centrer le texte à l'intérieur du bouton */
+    white-space: normal; /* Permettre le retour à la ligne pour le texte */
+}
+
+.btn-text {
+    display: inline-block; /* Permettre le retour à la ligne pour chaque ligne de texte */
+}
