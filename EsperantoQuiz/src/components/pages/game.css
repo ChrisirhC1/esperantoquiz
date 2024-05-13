@@ -2,3 +2,8 @@
 .custom-textarea {
     min-height: 100px; /* Définissez la hauteur minimale en pixels */
 }
+
+.no-scroll {
+    height: 100vh; /* Hauteur maximale de la fenêtre visible */
+    overflow: hidden; /* Désactiver le défilement */
+}

@@ -48,7 +48,7 @@ const Game = () => {
             {transitions((style, item) =>
                 item && (
                     <animated.div style={style}>
-                        <Container fluid className="vh-100 d-flex flex-column justify-content-start align-items-center ">
+                        <Container fluid className="no-scroll vh-100 d-flex flex-column justify-content-start align-items-center ">
                             <h1 className="mt-5">Joueur vs {ia ? 'IA' : 'Joueur'}</h1>
                             <div className="d-flex w-100 flex-column align-items-center justify-content-center flex-grow-1 mb-5 ">
                                 <Row className='w-100 d-flex justify-content-center align-items-center mb-2'>
