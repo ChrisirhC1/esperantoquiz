@@ -4,6 +4,6 @@
 }
 
 .no-scroll {
-    height: 100vh; /* Hauteur maximale de la fenêtre visible */
+    /* height: 100vh; Hauteur maximale de la fenêtre visible */
     overflow: hidden; /* Désactiver le défilement */
 }
