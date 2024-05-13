@@ -22,9 +22,10 @@ const AppRoutes = () => {
           item && (
             <animated.div style={style}>
               <Routes>
-                <Route path="/" element={<Accueil />} />
+                <Route path="/esperantoquiz" element={<Accueil />} />
                 <Route path="/game-mode" element={<GameMode />} />
                 <Route path="/game" element={<Game />} />
+                <Route path="*" element={<Accueil />} />
               </Routes>
             </animated.div>
           )
