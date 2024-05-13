@@ -79,7 +79,7 @@ const Game = () => {
                                     </Col>
                                 </Row>
                                 <div className="d-flex justify-content-center align-items-center">
-                                    <Button variant="primary" size="lg" href="/">Retour</Button>
+                                    <Button variant="primary" size="lg" href="/esperantoquiz/">Retour</Button>
                                 </div>
                             </div>
                         </Container>
