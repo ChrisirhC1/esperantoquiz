@@ -19,7 +19,7 @@ const Game = () => {
 
     const [inputValue, setInputValue] = useState('');
     const [translatedValue, setTranslatedValue] = useState('');
-    const [showTrad, setShowTrad] = useState(false);
+    const [showTrad, setShowTrad] = useState(true);
 
 
 
@@ -32,6 +32,7 @@ const Game = () => {
             const data = await response.json();
             const translatedText = data[0][0][0]; // Récupérer la traduction depuis la réponse JSON
             setTranslatedValue(translatedText);
+            setShowTrad(false);
         } catch (error) {
             console.error('Erreur lors de la traduction :', error);
         } 
@@ -66,7 +67,7 @@ const Game = () => {
                                             onChange={(e) => setInputValue(e.target.value)}
                                             className="form-control mb-2 w-100 custom-textarea"
                                             placeholder="Entrez une phrase en français"
-                                            style={{ filter: showTrad ? 'blur(5px)' : 'none'  }}
+                                            style={{ filter: showTrad ? 'none' : 'blur(5px)'  }}
                                             
                                             />
                                     </Col>
