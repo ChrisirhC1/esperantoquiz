@@ -19,6 +19,7 @@ const Game = () => {
 
     const [inputValue, setInputValue] = useState('');
     const [translatedValue, setTranslatedValue] = useState('');
+    const [showTrad, setShowTrad] = useState(false);
 
 
 
@@ -36,6 +37,13 @@ const Game = () => {
         } 
 
     };
+
+    const handleShow = () => {
+        setShowTrad(!showTrad);
+
+    };
+
+
     const handleClear = () => {
         setInputValue('');
         setTranslatedValue('');
@@ -58,7 +66,7 @@ const Game = () => {
                                             onChange={(e) => setInputValue(e.target.value)}
                                             className="form-control mb-2 w-100 custom-textarea"
                                             placeholder="Entrez une phrase en français"
-                                            style={{ filter: translatedValue ? 'blur(5px)' : 'none' }}
+                                            style={{ filter: showTrad ? 'blur(5px)' : 'none'  }}
                                             
                                             />
                                     </Col>
@@ -66,6 +74,7 @@ const Game = () => {
                                 <Row className='w-100 d-flex justify-content-center align-items-center mb-2'>
                                     <Col className='d-flex justify-content-center align-items-center gap-2'>
                                         <Button onClick={handleTranslate} className="me-2 mr-5">Traduire</Button>
+                                        <Button onClick={handleShow} className='me-2 mr-5'>Voir la traduction</Button>
                                         <Button onClick={handleClear} variant="secondary">Effacer</Button>
                                     </Col>
                                 </Row>
